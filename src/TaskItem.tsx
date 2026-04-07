@@ -11,7 +11,7 @@ type Props = {
   deleteTask: (id: number) => void;
 };
 
-function TaskItem({ task, id, toggleTask, deleteTask }: Props) {
+function TaskItem({ task, toggleTask, deleteTask }: Props) {
   return (
     <li className={`task-item ${task.completed ? "completed" : ""}`}>
       
